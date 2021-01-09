@@ -1,0 +1,17 @@
+<div>
+    <h1 id="TITLE">Все</h1>
+
+    <aside>
+        <ul class="MenuList" type="none" >
+            <li><button [class.active]="condition1" mat-raised-button (click)="ChangePage('Все')">Все</button></li>
+            <li><button [class.active]="condition2" mat-raised-button (click)="ChangePage('Любимые')">Любимые</button></li>
+            <li><button [class.active]="condition3" mat-raised-button (click)="ChangePage('Удаленные')">Удаленные</button></li>
+        </ul>
+    </aside>
+
+    <app-emoji-list *ngIf="tabIndex === 'Все'"></app-emoji-list>
+
+    <app-emoji-like-list *ngIf="tabIndex === 'Любимые'"></app-emoji-like-list>
+
+    <app-emoji-dt-like-list *ngIf="tabIndex === 'Удаленные'"></app-emoji-dt-like-list>
+</div>

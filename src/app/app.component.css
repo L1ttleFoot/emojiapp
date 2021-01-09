@@ -1,0 +1,30 @@
+.MenuList {
+    margin: 0px;
+    /*display:flex;*/
+    float: left;;
+    padding-left: 0px;
+}
+
+li {
+    padding: 2px;
+}
+
+.active{
+    background:#3C99DC;
+    color: white;
+}
+
+button:focus{
+    background:#3C99DC;
+    color: white;
+}
+
+/*
+.active{
+    background:#3C99DC;
+    color: white;
+}
+
+.active:hover {
+    background: white;
+}*/
