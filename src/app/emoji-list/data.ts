@@ -1819,9 +1819,11 @@ export const emojiLike=[];
 
 export const emojiDtLike=[];
 
-//Object.keys(emojiList).length
+//let numbers = Object.keys(emojiList).length //
 
-for (let i = 0; i < 500 ; i++) { 
+let numbers = 500;
+
+for (let i = 0; i < numbers ; i++) { 
     emoji[i]= new emojiStringClass(i,Object.keys(emojiList)[i],Object.values(emojiList)[i]);
 }
 
