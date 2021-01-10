@@ -74,13 +74,17 @@ export class EmojiListComponent implements AfterViewInit  {
     const index = this.emoji.indexOf(row);
     emojiDtLike.push(this.emoji[index]);
   
-    this.emoji[index].LikeState='none';
+    if(this.emoji[index].LikeState=='like'){
+
+      this.emoji[index].LikeState='none';
   
-    const indl = emojiLike.indexOf(emoji[index]);
+      const indl = emojiLike.indexOf(emoji[index]);
 
-    //console.log(emojiLike[indl])
+      //console.log(emojiLike[indl])
 
-    emojiLike.splice(indl,1);
+      emojiLike.splice(indl,1);
+      //console.log(emojiLike)
+    }
 
     if (index > -1) {
       emoji.splice(index, 1);
